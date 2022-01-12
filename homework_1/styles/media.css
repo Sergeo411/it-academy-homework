@@ -1,0 +1,105 @@
+@media all and (max-width: 630px) {
+    .navbar {
+        display: none;
+    }
+    .page-navbar {
+        display: none;
+    }
+    .page-content {
+        width: 100%;
+    }
+    .header {
+        display: none;
+    }
+    .header-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        max-width: 1000px;
+        color: white;
+    }
+    .logo-mobile-container {
+        display: flex;
+        align-items: center;
+    }
+    .logo {
+        height: 40px;
+        margin-left: 10px;
+    }
+    .header-mobile h2, .header-mobile i{
+        font-size: 26px;
+    }
+    .header-mobile i {
+        padding: 0;
+        position: relative;
+        z-index: 2;
+    }
+    .toolbar>div{
+        padding: 0;
+    }
+    .user-pick{
+        height: 45px;
+        margin-right: 10px;
+    }
+    .page-content-head {
+        justify-content: center;
+    }
+    .page-toolbar input,.page-toolbar-post p, .copyright {
+        display: none;
+    }
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+    }
+    #adding-mobile, #searching-mobile {
+        display: flex;
+        margin-right: 30px;
+    }
+    .page-toolbar i{
+        font-size: 25px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .page-toolbar {
+        padding: 10px 30px;
+    }
+    .page-toolbar-post p{
+        margin-right: 20px;
+    }
+    .post-head>div {
+        margin-right: 0;
+    }
+    .post-head>div>div {
+        margin-right: 10px;
+    }
+    .post-time {
+        margin-right: 0!important;
+    }
+}
+@media all and (max-width: 1000px){
+    .header, .navbar {
+        padding: 0 10px;
+    }
+}
+@media all and (min-width: 500px) {
+    ::-webkit-scrollbar {
+        height: 0;
+    }
+}
+@media all and (max-width: 500px) {
+    html  {
+        overflow: scroll;
+    }
+    .header-mobile {
+        padding: 0;
+    }
+    .page-container, .header-mobile, header{
+        min-width: 500px;
+    }
+    .logo-mobile-container{
+        padding-left: 10px;
+    }
+}

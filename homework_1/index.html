@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Qulix</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<header>
+    <div class="header">
+        <img src="images/logo.png" alt="logo" class="logo">
+        <div class="toolbar">
+            <div class="city">
+                <a class="city-name" href="#">New York</a>
+                <i class="fa fa-angle-down"></i>
+            </div>
+            <i class="fa fa-bell"></i>
+            <i class="fa fa-envelope"></i>
+            <div class="user">
+                <p class="user-name">User name</p>
+                <img src="images/userPhoto.jpg" alt="user-pick" class="user-pick">
+            </div>
+            <i class="fa fa-search"></i>
+        </div>
+    </div>
+    <div class="header-mobile">
+        <div class="logo-mobile-container">
+            <i class="fa fa-navicon" onclick="myFunction()">
+                <div class="mobile-navbar" id="menu">
+                    <div class="mobile-navbar-item">Menu item</div>
+                    <div class="mobile-navbar-item">Menu item</div>
+                    <div class="mobile-navbar-item">Menu item</div>
+                    <div class="mobile-navbar-item">Menu item</div>
+                    <div class="mobile-navbar-item">Menu item</div>
+                </div>
+            </i>
+            <img src="images/logo-white.png" alt="logo" class="logo">
+        </div>
+        <h2>Page Title</h2>
+        <div class="toolbar">
+            <div class="user">
+                <img src="images/userPhoto.jpg" alt="user-pick" class="user-pick">
+            </div>
+            <i class="fa fa-search"></i>
+        </div>
+    </div>
+    <div class="navbar-container">
+        <div class="navbar">
+            <div class="navbar-item">Menu item</div>
+            <div class="navbar-item">Menu item</div>
+            <div class="navbar-item">Menu item</div>
+            <div class="navbar-item">Menu item</div>
+            <div class="navbar-item">Menu item</div>
+        </div>
+    </div>
+</header>
+<div class="page">
+    <div class="page-container">
+        <div class="page-navbar">
+            <div class="page-navbar-card">
+                <a class="page-navbar-card-item" href="#">Submenu item 1</a>
+                <a class="page-navbar-card-item" href="#">Submenu item 2</a>
+            </div>
+            <div class="page-navbar-card">
+                <h3 class="page-navbar-card-title">Submenu</h3>
+                <a class="page-navbar-card-item" href="#">Submenu item 1</a>
+                <a class="page-navbar-card-item" href="#">Submenu item 2</a>
+                <a class="page-navbar-card-item" href="#">Submenu item 3</a>
+                <a class="page-navbar-card-item" href="#">More tags</a>
+            </div>
+            <div class="page-navbar-card">
+                <h3 class="page-navbar-card-title">Submenu</h3>
+                <a class="page-navbar-card-item" href="#">Submenu item 1</a>
+                <a class="page-navbar-card-item" href="#">Submenu item 2</a>
+            </div>
+            <div class="page-navbar-card">
+                <h3 class="page-navbar-card-title">Submenu</h3>
+                <a class="page-navbar-card-item" href="#">Submenu item 1</a>
+                <a class="page-navbar-card-item" href="#">Submenu item 2</a>
+                <a class="page-navbar-card-item" href="#">Submenu item 1 & Submenu item 2</a>
+                <a class="page-navbar-card-item" href="#">Submenu item 3</a>
+                <a class="page-navbar-card-item" href="#">Submenu item 4</a>
+                <a class="page-navbar-card-item" href="#">Submenu item 5</a>
+            </div>
+            <div class="page-navbar-card">
+                <h3 class="page-navbar-card-title">Submenu</h3>
+                <a class="page-navbar-card-item" href="#">Submenu item 1</a>
+                <a class="page-navbar-card-item" href="#">Submenu item 2</a>
+                <a class="page-navbar-card-item" href="#">Submenu item 3</a>
+            </div>
+
+        </div>
+        <div class="page-content">
+            <div>
+                <div class="page-content-head">
+                    <h1 class="page-title">Page title in</h1>
+                    <div class="page-city">
+                        <h1 class="page-city-name">New York</h1>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                </div>
+                <div class="page-toolbar">
+                    <input type="text" placeholder="Search...">
+                    <i class="fa fa-search" id="searching-mobile"></i>
+                    <div class="page-toolbar-post">
+                        <i class="fa fa-plus" id="adding-mobile"></i>
+                        <p>+ New item</p>
+                        <i class="fa fa-sliders"></i>
+                    </div>
+                </div>
+                <div class="page-content-wall">
+                    <div class="page-content-wall-post">
+                        <img src="images/photo1.jpg" alt="post-img" class="post-img">
+                        <div class="post-content">
+                            <div class="post-head">
+                                <div>
+                                    <div class="post-user-name">User name</div>
+                                    <div class="post-status">Pro</div>
+                                </div>
+                                <div>
+                                    <div class="post-comments"><i class="fa fa-comments"></i>2</div>
+                                    <div class="post-time"><i class="fa fa-clock-o"></i>20</div>
+                                </div>
+                            </div>
+                            <div class="post-info">
+                                <div class="post-title">Item title 1</div>
+                                <div class="post-text">Suspendisse potenti. Duis imperdiet ex non leo condimentum
+                                    efficitur.
+                                    Sed rhoncus eleifend lacus sit amet faucibus. Nunc semper nisl a dolor pretium
+                                    dapibus
+                                    quis quis lacus. Nulla faucibus viverra laoreet. Fusce in scelerisque magna. Duis
+                                    porta
+                                    erat vitae lectus lacinia tempus.
+                                </div>
+                            </div>
+                            <div class="post-tags"><i class="fa fa-tag"></i> tag1, tag2, tag3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-content-wall">
+                    <div class="page-content-wall-post">
+                        <img src="images/photo2.jpg" alt="post-img" class="post-img">
+                        <div class="post-content">
+                            <div class="post-head">
+                                <div>
+                                    <div class="post-user-name">User name</div>
+                                    <div class="post-status">Member</div>
+                                </div>
+                                <div>
+                                    <div class="post-comments"><i class="fa fa-comments"></i>2</div>
+                                    <div class="post-time"><i class="fa fa-clock-o"></i>20</div>
+                                </div>
+                            </div>
+                            <div class="post-info">
+                                <div class="post-title">Item title 2</div>
+                                <div class="post-text">Suspendisse potenti. Duis imperdiet ex non leo condimentum
+                                    efficitur.
+                                    Sed rhoncus eleifend lacus sit amet faucibus. Nunc semper nisl a dolor pretium
+                                    dapibus
+                                    quis quis lacus. Nulla faucibus viverra laoreet. Fusce in scelerisque magna. Duis
+                                    porta
+                                    erat vitae lectus lacinia tempus.
+                                </div>
+                            </div>
+                            <div class="post-tags"><i class="fa fa-tag"></i> tag1, tag2, tag3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-content-wall">
+                    <div class="page-content-wall-post">
+                        <img src="images/photo3.jpg" alt="post-img" class="post-img">
+                        <div class="post-content">
+                            <div class="post-head">
+                                <div>
+                                    <div class="post-user-name">User name</div>
+                                    <div class="post-status">Member</div>
+                                </div>
+                                <div>
+                                    <div class="post-comments"><i class="fa fa-comments"></i>2</div>
+                                    <div class="post-time"><i class="fa fa-clock-o"></i>20</div>
+                                </div>
+                            </div>
+                            <div class="post-info">
+                                <div class="post-title">Item title 3</div>
+                                <div class="post-text">Suspendisse potenti. Duis imperdiet ex non leo condimentum
+                                    efficitur.
+                                    Sed rhoncus eleifend lacus sit amet faucibus. Nunc semper nisl a dolor pretium
+                                    dapibus
+                                    quis quis lacus. Nulla faucibus viverra laoreet. Fusce in scelerisque magna. Duis
+                                    porta
+                                    erat vitae lectus lacinia tempus.
+                                </div>
+                            </div>
+                            <div class="post-tags"><i class="fa fa-tag"></i> tag1, tag2, tag3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-content-wall">
+                    <div class="page-content-wall-post">
+                        <img src="images/photo4.jpg" alt="post-img" class="post-img">
+                        <div class="post-content">
+                            <div class="post-head">
+                                <div>
+                                    <div class="post-user-name">User name</div>
+                                    <div class="post-status">Member</div>
+                                </div>
+                                <div>
+                                    <div class="post-comments"><i class="fa fa-comments"></i>2</div>
+                                    <div class="post-time"><i class="fa fa-clock-o"></i>20</div>
+                                </div>
+                            </div>
+                            <div class="post-info">
+                                <div class="post-title">Item title 4</div>
+                                <div class="post-text">Suspendisse potenti. Duis imperdiet ex non leo condimentum
+                                    efficitur.
+                                    Sed rhoncus eleifend lacus sit amet faucibus. Nunc semper nisl a dolor pretium
+                                    dapibus
+                                    quis quis lacus. Nulla faucibus viverra laoreet. Fusce in scelerisque magna. Duis
+                                    porta
+                                    erat vitae lectus lacinia tempus.
+                                </div>
+                            </div>
+                            <div class="post-tags"><i class="fa fa-tag"></i> tag1, tag2, tag3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-wall-nav">
+                    <a class="page-wall-nav-item" href="#">
+                        <i class="fa fa-angle-left"></i>
+                        <p>Previous</p>
+                    </a>
+                    <a class="page-wall-nav-item" href="#">
+                        <p>Next</p>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+            <footer>
+                <div class="footer-nav">
+                    <a href="#" class="footer-nav-item">About</a>
+                    <a href="#" class="footer-nav-item">Policies</a>
+                    <a href="#" class="footer-nav-item">Policies</a>
+                    <a href="#" class="footer-nav-item">Help</a>
+                    <a href="#" class="footer-nav-item">Contact us</a>
+                </div>
+                <div class="copyright">
+                    <img src="images/logo-min.png" alt="footer-logo" class="footer-logo">
+                    <p>© 2015. Qulix Systems. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
+<script src="scripts/main.js"></script>
+</body>
+</html>
