@@ -29,11 +29,17 @@ header {
 .toolbar>div, .toolbar>i {
     padding: 0 20px;
 }
+.city:hover, .fa-bell:hover, .fa-envelope:hover, .user-name:hover,.fa-search:hover{
+    color: white;
+}
 .city-name {
     padding-right: 5px;
     color: #727989;
     text-decoration: none;
     border-bottom: 1px dashed #727989;
+}
+.city-name:hover{
+    color: white;
 }
 .user {
     display: flex;
@@ -156,6 +162,12 @@ header {
     background-color: #f2f4f8;
     padding: 0 60px 0 30px;
     color: #727989;
+}
+.page-new-item:hover{
+    color: black;
+}
+.fa-sliders:hover{
+    color: black;
 }
 .page-toolbar-post {
     display: flex;
