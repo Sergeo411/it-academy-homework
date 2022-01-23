@@ -22,7 +22,7 @@ function firstpositive(arr) {
             return arr[i];
         }
     }
-    return 'нет положительных'
+    return 'нет положительных';
 }
 
 console.log(firstpositive(array))
@@ -34,11 +34,11 @@ function isPalindrome(str) {
     for (var i = 0; i < str.length / 2; i++) {
 
         if (str[i].toLowerCase() != str[str.length - 1 - i].toLowerCase()) {
-            return false
+            return false;
         }
     }
 
-    return true
+    return true;
 
 }
 
@@ -50,9 +50,9 @@ console.log(isPalindrome('привет'));
 function areAnagrams(str1, str2) {
 
     if (str1.toLowerCase().split('').sort().join('') != str2.toLowerCase().split('').sort().join('')) {
-        return false
+        return false;
     }
-    return true
+    return true;
 
 }
 
