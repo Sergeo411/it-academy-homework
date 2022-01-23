@@ -22,6 +22,7 @@ function firstpositive(arr) {
             return arr[i];
         }
     }
+    return 'нет положительных'
 }
 
 console.log(firstpositive(array))
