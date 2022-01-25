@@ -6,23 +6,28 @@ function filterNumbersArr(a) {
 
 var array = [-1, 0, 2, 34, -2];
 
-var Newarray=array.filter(filterNumbersArr);
+var newArray = array.filter(filterNumbersArr);
 
-console.log(Newarray);
+console.log(newArray);
+
 //Задание 2
 
-function firstpositive(i) {
-return i>0
+function firstpositive(array) {
+    return array.find(function (element) {
+            return element > 0
+        }
+    )
+
 }
 
-console.log(array.find(firstpositive))
+console.log(firstpositive(array))
 
 //Задание 3
 
 function isPalindrome(str) {
 
 
-    return str.toLowerCase()==str.toLowerCase().split('').reverse().join('');
+    return str.toLowerCase() == str.toLowerCase().split('').reverse().join('');
 
 }
 
@@ -33,7 +38,7 @@ console.log(isPalindrome('привет'));
 
 function areAnagrams(str1, str2) {
 
-        return str1.toLowerCase().split('').sort().join('') == str2.toLowerCase().split('').sort().join('');
+    return str1.toLowerCase().split('').sort().join('') == str2.toLowerCase().split('').sort().join('');
 
 
 }
@@ -45,11 +50,10 @@ console.log(areAnagrams('кот', 'отко'));
 //Задание 5
 
 function divideArr(arr, a) {
-    var newArr= new Array;
-    var k=0;
+    var newArr = new Array;
 
-    for(var i=0;i<Math.ceil(arr.length/a);i++){
-        newArr[i]=arr.slice(i*a,a*(i+1));
+    for (var i = 0; i < Math.ceil(arr.length / a); i++) {
+        newArr[i] = arr.slice(i * a, a * (i + 1));
     }
     return newArr;
 }
