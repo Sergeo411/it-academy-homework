@@ -12,8 +12,8 @@ console.log(newArray);
 
 //Задание 2
 
-function firstpositive(array) {
-    return array.find(function (element) {
+function firstpositive(arr) {
+    return arr.find(function (element) {
             return element > 0
         }
     )
