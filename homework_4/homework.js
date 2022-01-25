@@ -12,7 +12,7 @@ console.log(newArray);
 
 //Задание 2
 
-function firstpositive(arr) {
+function findFirstPositive(arr) {
     return arr.find(function (element) {
             return element > 0
         }
@@ -20,7 +20,7 @@ function firstpositive(arr) {
 
 }
 
-console.log(firstpositive(array))
+console.log(findFirstPositive(array))
 
 //Задание 3
 
