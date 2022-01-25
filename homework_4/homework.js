@@ -1,44 +1,28 @@
 // Задание 1
-function filterNumbersArr(a, i, arr) {
+function filterNumbersArr(a) {
 
-    if (a > 0) {
-        newArr.push(a);
-    }
-
-    return newArr;
+    return a > 0;
 }
 
-var newArr = [];
 var array = [-1, 0, 2, 34, -2];
 
-array.forEach(filterNumbersArr);
-console.log(newArr);
+var Newarray=array.filter(filterNumbersArr);
 
+console.log(Newarray);
 //Задание 2
 
-function firstpositive(arr) {
-    for (var i = 0; i < arr.length; i++) {
-        if (arr[i] > 0) {
-            return arr[i];
-        }
-    }
-    return 'нет положительных';
+function firstpositive(i) {
+return i>0
 }
 
-console.log(firstpositive(array))
+console.log(array.find(firstpositive))
 
 //Задание 3
 
 function isPalindrome(str) {
 
-    for (var i = 0; i < str.length / 2; i++) {
 
-        if (str[i].toLowerCase() != str[str.length - 1 - i].toLowerCase()) {
-            return false;
-        }
-    }
-
-    return true;
+    return str.toLowerCase()==str.toLowerCase().split('').reverse().join('');
 
 }
 
@@ -49,10 +33,8 @@ console.log(isPalindrome('привет'));
 
 function areAnagrams(str1, str2) {
 
-    if (str1.toLowerCase().split('').sort().join('') != str2.toLowerCase().split('').sort().join('')) {
-        return false;
-    }
-    return true;
+        return str1.toLowerCase().split('').sort().join('') == str2.toLowerCase().split('').sort().join('');
+
 
 }
 
