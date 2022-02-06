@@ -1,0 +1,10 @@
+
+.section table, .section table td {
+    border: 1px solid black;
+    height: 50px;
+    text-align: center;
+
+}
+.section table td{
+    width: 200px;
+}
