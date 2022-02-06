@@ -20,7 +20,7 @@ table.addEventListener('click', function () {
     if (target.className == 'items') {
         var input = document.createElement('input');
         input.value = target.innerText;
-        target.innerText = ''
+        target.innerText = '';
         target.appendChild(input);
         input.focus();
 
@@ -29,11 +29,11 @@ table.addEventListener('click', function () {
                     this.blur();
                 }
             }
-        )
+        );
         input.addEventListener('blur', function () {
                 target.innerText = input.value;
             }
-        )
+        );
 
     }
 })
