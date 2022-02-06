@@ -10,12 +10,12 @@ table.addEventListener('click', function () {
         }
         for (var i = 0; i < table.getElementsByTagName('td').length; i++) {
             var a = table.getElementsByTagName('td')[i];
+            if  (a.classList.contains('button')){continue}
             if (!a.classList.contains('items')) {
                 a.classList.toggle('items');
             }
 
         }
-
     }
     if (target.className == 'items') {
         var input = document.createElement('input');
