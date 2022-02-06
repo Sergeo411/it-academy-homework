@@ -10,8 +10,8 @@ table.addEventListener('click', function () {
         }
         for (var i = 0; i < table.getElementsByTagName('td').length; i++) {
             var a = table.getElementsByTagName('td')[i];
-            if  (a.classList.contains('button')){continue}
-            if (!a.classList.contains('items')) {
+
+            if (!a.classList.contains('items') && !a.classList.contains('button')) {
                 a.classList.toggle('items');
             }
 
