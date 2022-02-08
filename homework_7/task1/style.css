@@ -1,0 +1,33 @@
+form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.input-item, .form-button{
+
+    margin: 2px;
+    width: 200px;
+}
+.res{
+    border: 2px solid black;
+    color:red;
+    font-weight: bold;
+    border-spacing:4px 4px;
+    height: auto;
+    display: inline-block;
+    padding: 2px;
+}
+.black{
+    background: black;
+    height: 20px;
+    width: 20px;
+    border: 2px solid black;
+
+}
+
+.white {
+    background: white;
+    height: 20px;
+    width: 20px;
+    border: 2px solid black;
+}
