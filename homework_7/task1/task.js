@@ -28,7 +28,7 @@ button.addEventListener('click', function () {
 })
 
 result.addEventListener('click', function () {
-    target = event.target;
+    var target = event.target;
     if (target.tagName == 'TD') {
         var table = document.getElementsByTagName('td');
         for (var i = 0; i < table.length; i++) {

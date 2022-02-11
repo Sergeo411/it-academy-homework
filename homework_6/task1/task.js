@@ -1,6 +1,6 @@
 var table = document.getElementsByTagName('table')[0];
 table.addEventListener('click', function () {
-    target = event.target;
+    var target = event.target;
     if (target.tagName === 'BUTTON') {
 
         table.insertRow(0);

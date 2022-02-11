@@ -1,0 +1,46 @@
+html {
+    background-color: black;
+
+}
+
+.btn {
+    display: flex;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: red;
+    text-align: left;
+    margin: 5px;
+    width: 250px;
+    height: 20px;
+}
+
+.users{
+    font-size: 14px;
+    padding: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    background-color: red;
+    margin: 5px 5px 5px;
+    border-radius: 5px;
+
+}
+
+.page-conteiner{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.click{
+    background-color: white;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.page-content{
+    background-color: white;
+    border-radius: 5px;
+}
+img{
+    margin: 10px
+}
