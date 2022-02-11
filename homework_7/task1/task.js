@@ -35,7 +35,7 @@ result.addEventListener('click', function () {
             if (table[i].className == 'black') {
                 table[i].className = 'white';
             } else {
-                table[i].className = 'black'
+                table[i].className = 'black';
             }
         }
     }
