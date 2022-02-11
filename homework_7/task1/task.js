@@ -49,9 +49,9 @@ function drowTable(x, y) {
         for (var j = 0; j < x; j++) {
             var td = document.createElement('td');
             if (i % 2 == j % 2) {
-                td.className = "white";
+                td.className = 'white';
             } else {
-                td.className = "black";
+                td.className = 'black';
             }
             tr.appendChild(td);
         }
