@@ -5,44 +5,42 @@ var userList;
 button.addEventListener('click', function () {
     event.preventDefault();
     content.innerHTML = '';
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://reqsres.in/api/users?page=2', true);
-    xhr.send();
-    if( content.classList.contains('error')){
-        content.classList.remove('error');
-    }
-    xhr.onload = function () {
-        users.innerHTML = '';
-        var statusType = Math.round(this.status / 100);
-        if (statusType === 2) {
-            userList = JSON.parse(this.response).data;
-            for (var i = 0; i < userList.length; i++) {
-                var user = document.createElement('p');
-                user.className = 'users';
-                user.classList.add(userList[i].id);
-                users.appendChild(user);
-                user.innerHTML = 'Пользователь ' + (i + 1);
+    users.innerHTML = '';
+    if (localStorage.getItem('userList') != null) {
+
+        userList = JSON.parse(localStorage.userList)
+        menuDrow();
+    } else {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://reqres.in/api/users?page=2', true);
+        xhr.send();
+        xhr.onload = function () {
+            var statusType = Math.round(this.status / 100);
+            if (statusType === 2) {
+                userList = JSON.parse(this.response).data;
+                menuDrow();
             }
-            document.getElementsByTagName('p')[0].classList.add('click');
-            userInfo(userList[0].id);
-        }
-    };
-    xhr.onerror = function () {
-        content.innerHTML = 'Упс. Что-то пошло не по плану';
-        content.classList.remove('page-content');
-        content.classList.add('error');
-    };
+            if (localStorage.length == 0) {
+                localStorage.setItem('userList', JSON.stringify(userList));
+            }
+        };
+        xhr.onerror = function () {
+            content.innerHTML = 'Упс. Что-то пошло не по плану';
+            content.classList.remove('page-content');
+            content.classList.add('error');
+        };
+    }
 
 })
 users.addEventListener('click', function () {
     var target = event.target;
 
-    if (target.tagName === 'P' && target.tagName !='BUTTON') {
+    if (target.tagName === 'P') {
         target.classList.toggle('click');
-        for (var i = 0; i < document.getElementsByTagName('P').length; i++) {
-            if (document.getElementsByTagName('P')[i].classList.contains('click') &&
-                target.classList != document.getElementsByTagName('P')[i].classList) {
-                document.getElementsByTagName('P')[i].classList.toggle('click')
+        var menuItem = document.getElementsByTagName('P');
+        for (var i = 0; i < menuItem.length; i++) {
+            if (menuItem[i].classList.contains('click') && target.classList != menuItem[i].classList) {
+                menuItem[i].classList.toggle('click')
             }
         }
         content.innerHTML = '';
@@ -66,9 +64,21 @@ function userInfo(userId) {
     var userInfo = document.createElement('div');
     userInfo.classList.add('user-info');
     userInfo.innerHTML =
-        '<img src="'+userList[user].avatar+'">'+
-        '<p>'+'First Name: '+userList[user].first_name+'<br>'+
-              'Last Name: ' + userList[user].last_name+
+        '<img src="' + userList[user].avatar + '">' +
+        '<p>' + 'First Name: ' + userList[user].first_name + '<br>' +
+        'Last Name: ' + userList[user].last_name +
         '</p>'
     content.appendChild(userInfo);
+}
+
+function menuDrow() {
+    for (var i = 0; i < userList.length; i++) {
+        var user = document.createElement('p');
+        user.className = 'users';
+        user.classList.add(userList[i].id);
+        users.appendChild(user);
+        user.innerHTML = 'Пользователь ' + (i + 1);
+    }
+    document.getElementsByTagName('p')[0].classList.add('click');
+    userInfo(userList[0].id);
 }
