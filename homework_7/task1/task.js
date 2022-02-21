@@ -42,7 +42,6 @@ result.addEventListener('click', function () {
 })
 
 function drowTable(x, y) {
-
     result.innerHTML = '';
     for (var i = 0; i < y; i++) {
         var tr = document.createElement('tr');

@@ -1,3 +1,4 @@
+
 button = document.getElementsByClassName('btn')[0];
 users = document.getElementsByClassName('user-list')[0];
 content = document.getElementsByClassName('page-content')[0];

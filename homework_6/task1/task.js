@@ -3,7 +3,7 @@ table.addEventListener('click', function () {
     var target = event.target;
     if (target.tagName === 'BUTTON') {
 
-        table.insertRow(0);
+            table.insertRow(0);
         for (var i = 0; i < 3; i++) {
             table.rows[0].insertCell(i);
 
